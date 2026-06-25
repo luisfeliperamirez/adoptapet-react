@@ -1,0 +1,87 @@
+/* Contenedor del filtro */
+.filtro-especie-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.filtro-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Contenedor de botones */
+.filtro-botones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Botones de filtro */
+.filtro-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtro-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.filtro-btn.activo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.especie-text {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filtro-especie-container {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .filtro-botones {
+    gap: 10px;
+  }
+
+  .filtro-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filtro-botones {
+    flex-direction: column;
+  }
+
+  .filtro-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

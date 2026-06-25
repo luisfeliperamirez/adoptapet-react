@@ -20,3 +20,16 @@ También, define los tipos de las PropTypes y entrega valores por defecto para e
 -En App.jsx, renderiza ListaMascotas pasandole los datos importados
 2: bastante útil, creó sin errorres la lista de las mascotas asignandole la prop key usando el id de cada usando el id de cada uno 
 3: no se tuvo que modificar nada en esta etapa
+-------------------------
+1: src\components\FiltroEspecie.jsx
+
+-con botones o un selector para filtrar por la especie: "Todas", "Perro", "Gato", "Otro".
+-En App.jsx, usa UseStates para guardar el filtro seleccionado y un campo de búsqueda por nombre.
+-Aplica ambos filtros sobre el array antes de pasarlo a ListaMascotas.
+-Usa renderizado condicional para mostrar el mensaje "No hay mascotas que coincidan" cuando el resultado quede vacío.
+
+Ademas, el campo de busqueda debe ser un componente controlado (su valor vive en el eestado de React).
+Valida y normaliza el texto de busqueda (recorta espacios y limita el largo) antes de usarlo, para no confiar ciegamente en la entrada del usuario.
+2: la busqueda y filtro por especie tuvo éxito y funciona con todas las especificaciones dadas
+3: En esta estapa no hubo modificaciones
+-------------------------
