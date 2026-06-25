@@ -2,3 +2,11 @@
 2: fue útil ya que importó con éxito el array de las mascotas.js
 3: no se modificó nada
 
+1.: src/components/MascotaCard.jsx.
+1. El componente recibe por props: nombre, raza, edad, especie, descripcion, características.
+2. Muestra la información de fomra visual y ordendada.
+3. Aplica un estilo diferenciado por especie (color/etiqueta distinto para Perro, Gato, Otro).
+
+También, define los tipos de las PropTypes y entrega valores por defecto para evitar errores cuando falte un dato. Renderiza el texto siempre con contenido JSX normal. No uses dangerouslySetInnerHTML. No dejes credenciales, claves ni datos sensibles en el código
+2: muy útil ya que agregó estilos y coloresd distintos para diferenciar
+3: se modificó App.tsx para importar bien el componente MascotaCard

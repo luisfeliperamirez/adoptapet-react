@@ -1,3 +1,78 @@
+/* Sección de Mascotas */
+.mascotas-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
+}
+
+.mascotas-header {
+  text-align: center;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mascotas-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 12px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .mascotas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .mascotas-header h1 {
+    font-size: 32px;
+  }
+  
+  .mascotas-section {
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mascotas-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .mascotas-header h1 {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+  
+  .mascotas-section {
+    padding: 32px 12px;
+  }
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
