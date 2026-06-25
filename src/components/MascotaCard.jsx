@@ -39,7 +39,7 @@ const MascotaCard = ({
   }
 
   return (
-    <div className={`mascota-card ${getSpecieClass()}`}>
+    <div className={`mascota-card ${getSpecieClass()} ${adopcionUrgente ? 'urgente' : ''}`}>
       {/* Encabezado con nombre y etiqueta de especie */}
       <div className="card-header">
         <h2 className="mascota-nombre">{nombre}</h2>

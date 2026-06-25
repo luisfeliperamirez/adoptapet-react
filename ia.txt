@@ -33,3 +33,9 @@ Valida y normaliza el texto de busqueda (recorta espacios y limita el largo) ant
 2: la busqueda y filtro por especie tuvo éxito y funciona con todas las especificaciones dadas
 3: En esta estapa no hubo modificaciones
 -------------------------
+1:-Resalta visualmente los elementos con adopcionUrgente: true (por ejemplo, una etiqueta "URGENTE" o un borde distinto).
+-Agrega in contador que muestre cuantas masctotas tienen adopción urgente.
+-Elimina la página default de react, la que dice "Get started"
+-Verifica que toda la app corre sin errores ni warnigns en consola
+2: demasiado útil ya que logró resaltar correctamente las mascotas urgentes junto con el contador y también eliminó sin problemas la página principal default de react
+3: lo que se modificó fue la página default de react que aún no se había eliminado, de esta manera ahora solo se muestra la app de mascotas

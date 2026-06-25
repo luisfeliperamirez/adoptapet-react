@@ -80,22 +80,45 @@
 
 .urgente-badge {
   display: inline-flex;
-  padding: 6px 12px;
+  padding: 8px 14px;
   border-radius: 20px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  background: #ff6b6b;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
   color: #fff;
-  animation: pulse 2s infinite;
+  animation: pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+  letter-spacing: 0.5px;
+}
+
+/* Resalte especial para tarjetas urgentes */
+.mascota-card.urgente {
+  border-left-width: 6px;
+  border-left-color: #ff6b6b;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.03) 0%, rgba(255, 82, 82, 0.02) 100%);
+}
+
+.mascota-card.urgente::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.8;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.6);
   }
 }
 
