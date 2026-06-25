@@ -4,7 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { mascotas } from './data/mascotas.js'
-import MascotaCard from './components/MascotaCard.jsx'
+import ListaMascotas from './components/ListaMascotas.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,20 +19,7 @@ function App() {
           <h1>🐾 Mascotas en Adopción</h1>
           <p className="subtitle">Encuentra tu compañero perfecto</p>
         </div>
-        <div className="mascotas-grid">
-          {mascotas.map((mascota) => (
-            <MascotaCard
-              key={mascota.id}
-              nombre={mascota.nombre}
-              raza={mascota.raza}
-              edad={mascota.edad}
-              especie={mascota.especie}
-              descripcion={mascota.descripcion}
-              caracteristicas={mascota.caracteristicas}
-              adopcionUrgente={mascota.adopcionUrgente}
-            />
-          ))}
-        </div>
+        <ListaMascotas mascotas={mascotas} />
       </section>
 
       <section id="center">
