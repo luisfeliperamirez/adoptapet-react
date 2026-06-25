@@ -1,0 +1,4 @@
+1: src/data/mascotasa.js, Importa el array en App.jsx y verifica que carga en console.log
+2: fue útil ya que importó con éxito el array de las mascotas.js
+3: no se modificó nada
+
